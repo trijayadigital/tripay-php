@@ -22,7 +22,7 @@ class Transaction extends Base
     public function __construct($environment)
     {
         // default expiry: 24 hours.
-        $this->expiresAfter = $this->expiresAfter(1440);
+        $this->expiresAfter(1440);
 
         parent::__construct($environment);
     }
